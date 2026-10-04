@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Adebisi Quadri Okiki — Web3 Builder & Arc Architect</title>
+<title>Adebisi Quadri Okiki</title>
 <style>
   :root{
     --bg:#0e0b07; --bg2:#161009; --panel:#1c130c; --panel2:#241811;
@@ -15,18 +15,15 @@
   a{color:var(--butter);text-decoration:none}
   a:hover{text-decoration:underline}
   .wrap{max-width:980px;margin:0 auto;padding:0 22px}
-  /* header */
   header{position:sticky;top:0;z-index:50;background:rgba(14,11,7,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
   .logo{font-weight:700;color:var(--butter);letter-spacing:.3px}
   .nav-links{display:flex;gap:22px;font-size:14px}
   .nav-links a{color:var(--muted)}
   .nav-links a:hover{color:var(--butter);text-decoration:none}
-  /* hero */
   .hero{padding:90px 0 70px;background:radial-gradient(1200px 400px at 70% -10%,rgba(232,201,138,.10),transparent)}
   .hero h1{font-size:46px;line-height:1.1;font-weight:800;letter-spacing:-.5px}
   .hero .accent{color:var(--butter)}
-  .hero p{margin-top:18px;max-width:620px;color:var(--muted);font-size:17px}
   .badges{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
   .badge{background:var(--panel);border:1px solid var(--line);color:var(--butter-dim);font-size:12px;padding:6px 13px;border-radius:999px}
   .cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
@@ -35,44 +32,29 @@
   .btn-primary:hover{background:#f0d49c;text-decoration:none}
   .btn-ghost{border:1px solid var(--line);color:var(--text)}
   .btn-ghost:hover{border-color:var(--butter);text-decoration:none}
-  /* sections */
   section.block{padding:64px 0;border-top:1px solid var(--line)}
-  h2.section-title{font-size:26px;margin-bottom:8px}
-  .lead{color:var(--muted);margin-bottom:30px;max-width:640px}
-  /* about */
-  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:30px}
-  .about-grid p{color:var(--text);margin-bottom:14px}
-  .facts{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+  h2.section-title{font-size:26px;margin-bottom:24px}
+  .facts{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;max-width:520px}
   .facts li{list-style:none;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;display:flex;justify-content:space-between;gap:10px}
   .facts li:last-child{border-bottom:none}
   .facts .k{color:var(--muted)}
   .facts .v{color:var(--butter-dim);text-align:right}
-  /* projects */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.2s}
   .card:hover{border-color:var(--butter-dim);transform:translateY(-3px)}
   .card .tag{font-size:11px;color:var(--butter-dim);text-transform:uppercase;letter-spacing:1px}
   .card h3{font-size:19px;margin:8px 0 10px}
-  .card p{font-size:14px;color:var(--muted);margin-bottom:14px}
   .card .links{font-size:13px;display:flex;gap:14px;flex-wrap:wrap}
-  /* wallets */
   .wallets{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .wallet{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
   .wallet .chain{font-size:12px;color:var(--butter-dim);text-transform:uppercase;letter-spacing:1px}
   .wallet .addr{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--text);margin:8px 0;word-break:break-all}
   .wallet a{font-size:13px}
-  /* content */
-  .content-list{display:grid;gap:12px}
-  .content-item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:14px}
-  .content-item .t{font-size:15px}
-  .content-item .d{font-size:13px;color:var(--muted)}
-  .content-item .go{font-size:13px;white-space:nowrap}
-  /* contact */
   .contact-grid{display:flex;gap:26px;flex-wrap:wrap;font-size:15px}
   .contact-grid div{display:flex;flex-direction:column;gap:3px}
   .contact-grid .k{font-size:12px;color:var(--muted)}
   footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);text-align:center}
-  @media(max-width:680px){.hero h1{font-size:34px}.about-grid,.wallets{grid-template-columns:1fr}.nav-links{display:none}}
+  @media(max-width:680px){.hero h1{font-size:34px}.wallets{grid-template-columns:1fr}.nav-links{display:none}}
 </style>
 </head>
 <body>
@@ -81,10 +63,8 @@
   <div class="wrap nav">
     <div class="logo">AQO</div>
     <nav class="nav-links">
-      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#wallets">Wallets</a>
-      <a href="#content">Content</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -92,13 +72,11 @@
 
 <section class="hero">
   <div class="wrap">
-    <h1>Adebisi Quadri Okiki<br><span class="accent">Web3 Builder · Arc Architect</span></h1>
-    <p>I build autonomous on-chain agents and tooling for the agentic economy. From self-custody payment agents on Circle Arc to mint automation on Robinhood Chain — I ship real, working decentralized infrastructure.</p>
+    <h1>Adebisi Quadri Okiki<br><span class="accent">Web3 Builder</span></h1>
     <div class="badges">
-      <span class="badge">Circle Arc Architect (5000 cohort)</span>
+      <span class="badge">Circle Arc Architect</span>
       <span class="badge">Autonomous Agents</span>
       <span class="badge">Stablecoin Payments</span>
-      <span class="badge">Univ. of Ilorin</span>
     </div>
     <div class="cta">
       <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -107,65 +85,41 @@
   </div>
 </section>
 
-<section class="block" id="about">
-  <div class="wrap">
-    <h2 class="section-title">About</h2>
-    <div class="about-grid">
-      <div>
-        <p>I'm a Nigerian Web3 builder and computer science student at the University of Ilorin. I work at the edge of autonomous finance — designing agents that hold balances, execute scheduled payments, and interact with on-chain protocols without constant human input.</p>
-        <p>As a Circle Arc Architect, I build educational content and working demos that show what developers can actually ship on a stablecoin-native chain: agent wallets, nanopayments, treasury apps, and programmable money flows.</p>
-        <p>My hands-on projects live on Circle Arc — Ease for USDC payments by username, Concord as an autonomous payment agent — and Robinhood Chain for mint automation. Real mainnet transactions, not simulations.</p>
-      </div>
-      <ul class="facts">
-        <li><span class="k">Role</span><span class="v">Web3 Builder</span></li>
-        <li><span class="k">Program</span><span class="v">Arc Architect '25</span></li>
-        <li><span class="k">Focus</span><span class="v">Agentic Finance</span></li>
-        <li><span class="k">Chain</span><span class="v">Arc · Robinhood</span></li>
-        <li><span class="k">School</span><span class="v">Univ. of Ilorin</span></li>
-        <li><span class="k">GitHub</span><span class="v">@Adebisi1111</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <section class="block" id="projects">
   <div class="wrap">
     <h2 class="section-title">Projects</h2>
-    <p class="lead">Real, deployed work — not mockups.</p>
     <div class="cards">
       <div class="card">
-        <div class="tag">Circle Arc · Stablecoin Payments</div>
-        <h3>Ease — USDC by username</h3>
-        <p>Send USDC to <code>@adaeze</code> instead of a 42-character address. A request is a claim, not an escrow: the named payer settles from their own wallet or declines, and a decline is final. No contract ever holds the money, so nothing can get stuck and there is no refund path to go wrong. Two independent Arc mainnet deployments, 125 contract tests, and a documented audit history.</p>
+        <div class="tag">Circle Arc</div>
+        <h3>Ease</h3>
         <div class="links">
-          <a href="https://adebisi1111.github.io/send-app/landing.html" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://adebisi1111.github.io/send-app/landing.html" target="_blank" rel="noopener">Live</a>
           <a href="https://github.com/Adebisi1111/send-app" target="_blank" rel="noopener">GitHub</a>
           <a href="https://explorer.arc.io/address/0x55484b461534e065e3e46f13c20c89d26b913339" target="_blank" rel="noopener">Contract</a>
         </div>
       </div>
       <div class="card">
-        <div class="tag">Circle Arc · Autonomous Agent</div>
-        <h3>Concord — Autonomous Payment Agent</h3>
-        <p>A self-custody Arc agent wallet that pays multiple recipients (by Gmail, not address) in USDC or EURC on a set schedule. Real on-chain transfers, transaction history, per-user wallets, and a VPS cron that re-settles daily from each wallet's balance.</p>
+        <div class="tag">Circle Arc</div>
+        <h3>Concord</h3>
         <div class="links">
-          <a href="https://arc-autopay.vercel.app" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://arc-autopay.vercel.app" target="_blank" rel="noopener">Live</a>
           <a href="https://github.com/Adebisi1111" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
       <div class="card">
-        <div class="tag">Robinhood Chain · Automation</div>
-        <h3>Free-Mint Sniper</h3>
-        <p>A one-shot Robinhood Chain mint tool. Point it at any NFT contract with <code>mintSeaDrop</code> and it snipes from a funded wallet — built for catching drops fast without a bloated scanner.</p>
+        <div class="tag">GenLayer</div>
+        <h3>Agent Reputation Ledger</h3>
         <div class="links">
-          <a href="https://robinhoodchain.blockscout.com/address/0x47D19387fB2D71A3107e4E8748E533AF944E84B4" target="_blank" rel="noopener">Wallet</a>
+          <a href="https://adebisi1111.github.io/genlayer-reputation-app/" target="_blank" rel="noopener">Live</a>
+          <a href="https://github.com/Adebisi1111/genlayer-reputation-app" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
       <div class="card">
-        <div class="tag">Arc House · Education</div>
-        <h3>Arc Builder Education Series</h3>
-        <p>Educational content explaining what developers can build on Arc — from the core building blocks (stable assets, interoperability, execution) to agentic payments, nanopayments, and treasury apps. Sources linked to Arc House.</p>
+        <div class="tag">GenLayer</div>
+        <h3>Agent Payment Adjudicator</h3>
         <div class="links">
-          <a href="https://community.arc.io/public/videos/introduction-to-arc-2026-08-06" target="_blank" rel="noopener">Arc Intro</a>
+          <a href="https://adebisi1111.github.io/genlayer-adjudicator-app/" target="_blank" rel="noopener">Live</a>
+          <a href="https://github.com/Adebisi1111/genlayer-adjudicator-app" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
@@ -175,42 +129,16 @@
 <section class="block" id="wallets">
   <div class="wrap">
     <h2 class="section-title">Wallets</h2>
-    <p class="lead">Self-custody addresses I actively use. Verify any transaction on-chain.</p>
     <div class="wallets">
       <div class="wallet">
-        <div class="chain">Circle Arc Testnet</div>
+        <div class="chain">Circle Arc</div>
         <div class="addr">0xb0428927cb094417b24a6d9e32d14303399f9c91</div>
-        <a href="https://explorer.arc.network/address/0xb0428927cb094417b24a6d9e32d14303399f9c91" target="_blank" rel="noopener">View on Arc Explorer →</a>
+        <a href="https://explorer.arc.io/address/0xb0428927cb094417b24a6d9e32d14303399f9c91" target="_blank" rel="noopener">Explorer →</a>
       </div>
       <div class="wallet">
         <div class="chain">Robinhood Chain</div>
         <div class="addr">0x47D19387fB2D71A3107e4E8748E533AF944E84B4</div>
-        <a href="https://robinhoodchain.blockscout.com/address/0x47D19387fB2D71A3107e4E8748E533AF944E84B4" target="_blank" rel="noopener">View on Blockscout →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="content">
-  <div class="wrap">
-    <h2 class="section-title">Content & Writing</h2>
-    <p class="lead">Educational resources I've published on building with Arc.</p>
-    <div class="content-list">
-      <div class="content-item">
-        <div><div class="t">The Building Blocks of Arc</div><div class="d">Stable assets, interoperability, and execution — what developers get.</div></div>
-        <a class="go" href="https://community.arc.io/public/videos/introduction-to-arc-2026-08-06" target="_blank" rel="noopener">Read →</a>
-      </div>
-      <div class="content-item">
-        <div><div class="t">Core Primitives of Arc</div><div class="d">The foundational capabilities for on-chain finance.</div></div>
-        <a class="go" href="https://community.arc.io/public/videos/core-primitives-of-arc-2026-08-12" target="_blank" rel="noopener">Read →</a>
-      </div>
-      <div class="content-item">
-        <div><div class="t">Agentic Economy Thesis</div><div class="d">Why machine-speed money changes the nature of the firm.</div></div>
-        <a class="go" href="https://community.arc.io/public/videos/the-agentic-economy-thesis-in-6-minutes-2026-07-29" target="_blank" rel="noopener">Read →</a>
-      </div>
-      <div class="content-item">
-        <div><div class="t">Agent-Mediated Finance on Arc</div><div class="d">ERC-8004, x402, escrow & spending limits for agents.</div></div>
-        <a class="go" href="https://community.arc.io/public/blogs/what-vypers-arc-testnet-work-opens-up-for-builders-of-agentic-financial-workflows-2026-06-26" target="_blank" rel="noopener">Read →</a>
+        <a href="https://robinhoodchain.blockscout.com/address/0x47D19387fB2D71A3107e4E8748E533AF944E84B4" target="_blank" rel="noopener">Blockscout →</a>
       </div>
     </div>
   </div>
@@ -222,14 +150,12 @@
     <div class="contact-grid">
       <div><span class="k">GitHub</span><a href="https://github.com/Adebisi1111" target="_blank" rel="noopener">@Adebisi1111</a></div>
       <div><span class="k">Email</span><a href="mailto:oriyomi1511@gmail.com">oriyomi1511@gmail.com</a></div>
-      <div><span class="k">Arc House</span><a href="https://community.arc.io" target="_blank" rel="noopener">community.arc.io</a></div>
-      <div><span class="k">Live Agent</span><a href="https://arc-autopay.vercel.app" target="_blank" rel="noopener">arc-autopay.vercel.app</a></div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">© 2026 Adebisi Quadri Okiki · Built for the agentic economy</div>
+  <div class="wrap">© 2026 Adebisi Quadri Okiki</div>
 </footer>
 
 </body>
